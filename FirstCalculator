@@ -1,0 +1,24 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace test_urok9
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Привет, Это простенький калькулятор. Введи первое число:");
+            double num1 = double.Parse(Console.ReadLine());
+            Console.WriteLine("Отлично, принято. Введи второе число:");
+            double num2 = double.Parse(Console.ReadLine());
+            Console.WriteLine($"Произведение чисел равно:{num1*num2}");
+            Console.WriteLine($"Сумма чисел равна:{num1 + num2}");
+            Console.WriteLine($"Частное числа равно: {num1 / num2}");
+            Console.WriteLine($"Остаток от деления равен: {num1 % num2}");
+            Console.ReadKey();
+        }
+    }
+}
